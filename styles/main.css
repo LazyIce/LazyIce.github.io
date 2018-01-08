@@ -103,7 +103,7 @@ video {
 #nav-button #nav-button-hover::before,
 #nav-button #nav-button-hover::after {
   content: "";
-  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  background: linear-gradient(180deg, #f7b733, #fc4a1a);
 }
 #nav-button #nav-button-hover::before {
   -webkit-transform: translate3d(0, 105%, 0);
@@ -345,7 +345,6 @@ video {
   list-style: none;
   color: #ffffff;
   font-size: calc(1rem + 6.1vh);
-  font-family: "Roboto slab";
 }
 #nav-menu #nav-menu-list .nav-menu-link-wrap .nav-menu-link {
   position: relative;
@@ -386,8 +385,8 @@ video {
           transform: translate3d(0, 100%, 0);
 }
 #nav-menu #nav-menu-list .nav-menu-link-wrap .nav-menu-link .nav-menu-text-color::before {
-  color: #ff1f44;
-  background: -webkit-linear-gradient(-90deg, #ff3000, #ed0200, #ff096c, #d50082);
+  color: #f7b733;
+  background: -webkit-linear-gradient(90deg, #f7b733, #fc4a1a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transform: translate3d(0, -100%, 0);
@@ -718,7 +717,6 @@ video {
   padding: 7px 0;
   width: 100%;
   float: left;
-  font-family: 'Roboto slab';
   font-size: 1.2rem;
 }
 #content-wrap #content-page .content-page-no.blackbg {
@@ -870,7 +868,7 @@ video {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  background: linear-gradient(180deg, #f7b733, #fc4a1a);
 }
 #content-wrap #content-case {
   z-index: 1;
