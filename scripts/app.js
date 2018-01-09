@@ -39578,25 +39578,25 @@ var app = angular.module('myApp',['ngAnimate', 'ngRoute']);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: './pages/home.html'
+            templateUrl: 'pages/home.html'
         })
         .when('/ITMP', {
-            templateUrl: './pages/ITMP.html'
+            templateUrl: 'pages/ITMP.html'
         })
         .when('/eyegic', {
-            templateUrl: './pages/eyegic.html'
+            templateUrl: 'pages/eyegic.html'
         })
         .when('/neoclub', {
-            templateUrl: './pages/neoclub.html'
+            templateUrl: 'pages/neoclub.html'
         })
         .when('/ingenuity', {
-            templateUrl: './pages/ingenuity.html'
+            templateUrl: 'pages/ingenuity.html'
         })
         .when('/meteorology', {
-            templateUrl: './pages/meteorology.html'
+            templateUrl: 'pages/meteorology.html'
         })
         .when('/iSports', {
-            templateUrl: './pages/iSports.html'
+            templateUrl: 'pages/iSports.html'
         })
         .otherwise({
             redirectTo: '/'
