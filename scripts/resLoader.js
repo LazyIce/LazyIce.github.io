@@ -75,3 +75,25 @@
     //暴露公共方法
     return resLoader;
 }));
+
+var loader = new resLoader({
+    resources : [
+        './images/me.png',
+        './images/itmp.png',
+        './images/eyegic.png',
+        './images/neoclub.png',
+        './images/ingenuity.png',
+        './images/meteorology.png',
+        './images/isports.png'
+    ],
+    onStart : function(total){
+    },
+    onProgress : function(current, total){
+        var percent = current / total * 100;
+        document.getElementById('loader-rate').innerHTML = percent + '%';
+    },
+    onComplete : function(total){
+        document.getElementById('loader').style.transform = 'translate3d(0, -100%, 0)';
+    }
+});
+loader.start();
