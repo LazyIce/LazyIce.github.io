@@ -1135,3 +1135,32 @@ body {
   transform: translate3d(-50%, -50%, 0);
   font-size: 5vh;
 }
+#loader {
+  position: fixed ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+#loader #loader-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #1b1a25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#loader #loader-bg h1 {
+  color: #f7b733;
+  background: -webkit-linear-gradient(90deg, #f7b733, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8vw;
+  font-family: 'Abril';
+  letter-spacing: 5px;
+}
