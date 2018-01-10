@@ -89,7 +89,7 @@ var loader = new resLoader({
     onStart : function(total){
     },
     onProgress : function(current, total){
-        var percent = Math.round(current / total * 100);
+        var percent = Math.round(current / total  * 100);
         document.getElementById('loader-rate').innerHTML = percent + '%';
     },
     onComplete : function(total){
