@@ -39677,7 +39677,8 @@ var app = angular.module('myApp',['ngAnimate', 'ngRoute']);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'pages/home.html'
+            templateUrl: 'pages/home.html',
+            controller: 'ContentController'
         })
         .when('/ITMP', {
             templateUrl: 'pages/ITMP.html'
@@ -39713,17 +39714,44 @@ app.controller('AppController', function($scope, $location) {
         $scope.isActive = !$scope.isActive;
     };
 
-    $scope.$on('$routeChangeSuccess', function() {
+    $scope.$on('$routeChangeSuccess', function(evt, cur, pre) {
         $scope.isActive = false;
-        if($location.url() == '/')
-            $scope.page = 1;
+        if($location.url() == '/') {
+            if(pre) {
+                switch(pre.loadedTemplateUrl) {
+                    case 'pages/home.html': 
+                        $scope.page = 1;
+                        break;
+                    case 'pages/ITMP.html':
+                        $scope.page = 2;
+                        break;
+                    case 'pages/eyegic.html':
+                        $scope.page = 3;
+                        break;
+                    case 'pages/neoclub.html':
+                        $scope.page = 4;
+                        break;
+                    case 'pages/ingenuity.html':
+                        $scope.page = 5;
+                        break;
+                    case 'pages/meteorology.html':
+                        $scope.page = 6;
+                        break;
+                    case 'pages/iSports.html':
+                        $scope.page = 7;
+                        break;
+                    default:
+                        $scope.page = 1;
+                }
+            }
+        }
         else
             $scope.page = 9;
     });
 });
 
-app.controller('ContentController', function($scope, $timeout) {
-    
+app.controller('ContentController', function($routeParams, $scope, $timeout) {
+   
 });
 
 app.directive('ngMouseWheel', function($timeout) {
@@ -39736,10 +39764,10 @@ app.directive('ngMouseWheel', function($timeout) {
             var up = true;
             if(delta > 0) {
                 scope.$apply(function(){
-                    if(scope.page < scope.totalPage) {
-                        scope.page ++;
-                        scope.isAnimating = true;
+                    if(scope.page < scope.totalPage && scope.page >=1) {
+                        scope.page ++;    
                     }
+                    scope.isAnimating = true;
                 });
                 // for IE
                 event.returnValue = false;
@@ -39750,10 +39778,10 @@ app.directive('ngMouseWheel', function($timeout) {
             }
             if(delta < 0) {
                 scope.$apply(function(){
-                    if(scope.page > 1) {
-                        scope.page --;
-                        scope.isAnimating = true;
+                    if(scope.page > 1 && scope.page <=8) {
+                        scope.page --;               
                     }
+                    scope.isAnimating = true;
                 });
                 // for IE
                 event.returnValue = false;
