@@ -39722,6 +39722,7 @@ app.controller('AppController', function($scope, $location) {
 
     $scope.$on('$routeChangeSuccess', function(evt, cur, pre) {
         $scope.isActive = false;
+        document.scrollingElement.scrollTop = 0;
         if($location.url() == '/') {
             if(pre) {
                 switch(pre.loadedTemplateUrl) {
