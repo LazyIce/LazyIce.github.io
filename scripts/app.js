@@ -39654,12 +39654,18 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 var loader = new resLoader({
     resources : [
         './images/me.png',
-        './images/itmp.png',
-        './images/eyegic.png',
-        './images/neoclub.png',
-        './images/ingenuity.png',
-        './images/meteorology.png',
-        './images/isports.png'
+        './images/itmp/itmp.png',
+        './images/itmp/itmp1.png',
+        './images/eyegic/eyegic.png',
+        './images/eyegic/eyegic1.png',
+        './images/neoclub/neoclub.png',
+        './images/neoclub/neoclub1.png',
+        './images/ingenuity/ingenuity.png',
+        './images/ingenuity/ingenuity1.png',
+        './images/meteorology/meteorology.png',
+        './images/meteorology/meteorology1.jpg',
+        './images/isports/isports.png',
+        './images/isports/isports1.jpg'
     ],
     onStart : function(total){
     },

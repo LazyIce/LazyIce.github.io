@@ -1517,22 +1517,22 @@ body {
   will-change: transform;
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-0 {
-  background-image: url('../images/itmp1.png');
+  background-image: url('../images/itmp/itmp1.png');
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-1 {
-  background-image: url('../images/eyegic1.png');
+  background-image: url('../images/eyegic/eyegic1.png');
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-2 {
-  background-image: url('../images/neoclub1.png');
+  background-image: url('../images/neoclub/neoclub1.png');
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-3 {
-  background-image: url('../images/ingenuity1.png');
+  background-image: url('../images/ingenuity/ingenuity1.png');
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-4 {
-  background-image: url('../images/meteorology1.jpg');
+  background-image: url('../images/meteorology/meteorology1.jpg');
 }
 .detail-wrap .detail-intro .detail-intro-left #detail-intro-left-bg-5 {
-  background-image: url('../images/isports1.jpg');
+  background-image: url('../images/isports/isports1.jpg');
 }
 .detail-wrap .detail-intro .detail-intro-left .detail-intro-left-img-wrap {
   position: absolute;
@@ -1697,7 +1697,7 @@ body {
 .detail-wrap .detail-overview .detail-overview-list-imgs {
   position: relative;
   margin: auto;
-  padding: 0 0 0 5vw;
+  padding: 0 0 5vw 0;
   width: 50vw;
 }
 .detail-wrap .detail-overview .detail-overview-list-imgs .detail-overview-list-left,
